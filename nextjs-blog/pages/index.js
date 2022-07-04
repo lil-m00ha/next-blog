@@ -4,54 +4,32 @@ import Link from 'next/link';
 export default function Home() {
     return (
         <div className="container">
-            {/* Head - Next element that appends content to the <head> of the page */}
             <Head>
-                <title>Create Next App</title>
+                <title>Next-Blog App</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main>
                 <h1 className="title">
-                    Learn <a href="https://nextjs.org">Next.js!</a>
+                    Greetings and welcome!
                 </h1>
 
                 <p className="description">
-                    Get started by editing <code>pages/index.js</code>
+                    Get started by selecting one of the pages below
                 </p>
 
                 <div className="grid">
-                    <a href="https://nextjs.org/docs" className="card">
-                        <h3>Documentation &rarr;</h3>
-                        <p>Find in-depth information about Next.js features and API.</p>
-                    </a>
-
-                    <a href="https://nextjs.org/learn" className="card">
-                        <h3>Learn &rarr;</h3>
-                        <p>Learn about Next.js in an interactive course with quizzes!</p>
-                    </a>
-
-                    <a
-                        href="https://github.com/vercel/next.js/tree/master/examples"
-                        className="card"
-                    >
-                        <h3>Examples &rarr;</h3>
-                        <p>Discover and deploy boilerplate example Next.js projects.</p>
-                    </a>
-
-                    <a
-                        href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                        className="card"
-                    >
-                        <h3>Deploy &rarr;</h3>
-                        <p>
-                            Instantly deploy your Next.js site to a public URL with Vercel.
-                        </p>
-                    </a>
-    
                     <Link href='/posts/pdf-reader'>
                         <a className="card">
                             <h3>PDF Reader</h3>
                             <p>Check out created pdf-reader with ability to view and export pages.</p>
+                        </a>
+                    </Link>
+    
+                    <Link href='/posts/bird-portal'>
+                        <a className="card">
+                            <h3>Bird portal</h3>
+                            <p>Web resource dedicated to birds and all about them!</p>
                         </a>
                     </Link>
                 </div>
